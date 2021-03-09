@@ -262,6 +262,11 @@ time, mark, audio, video {
 	}
 
 }
+@media(max-width: 375px){
+	.avatar-upload .avatar-preview {
+	    height: 215px;
+	}
+}
 @media(max-width: 320px){
 	.forgot-password {
     	font-size: 12px;
