@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="div_dangnhap">
+	    <div id="dv_icon">
+	        <img src="images/logo_text.png">
+	    </div>
+	    <div class="zone-form">
+	    	<form action="" class="form-login">
+				<div class="data-filed">
+	                <label class="lbl-field">Nhập tên tài khoản</label>
+	                <input type="text" class="box-enter" name="txtacc">
+	            </div>
+	            <div class="data-filed">
+	                <label class="lbl-field">Nhập mật khẩu</label>
+	                <input type="text" class="box-enter" name="txtacc">
+	            </div>
+	            <div  class="data-filed">
+	                <label class="lbl-field">Nhập mã xác thực</label>
+	            	<div class="row-login">
+		                <div class="col-login-6">
+		                    <div>
+		                        <input type="text" class="box-enter" name="txtauthen" required="" aria-required="true">
+		                    </div>
+		                </div>
+		                <div class="col-login-6">
+		                    <div class="txt-authentication">abvkd</div>
+		                </div>
+		            </div>
+	            </div>
+	            <button class="btn-login" type="submit">Đăng nhập</button>
+	            
+	            <div class="dp-flex-between">
+		            <a href="#" class="forgot-password">Quên mật khẩu</a>
+		            <div class="next-regis">
+		            	<div class="cl-gray">Bạn chưa có tài khoản? <a href="#" class="page-regis">Đăng ký</a></div>
+		                
+		            </div>
+		        </div>
+			</form>
+			<form action="" class="form-register">
+
+				<div class="over-auto">
+					<div class="data-filed">
+		                <label class="lbl-field">Họ và tên</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Ngày sinh</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+
+		            
+		            <div class="data-filed">
+		                <label class="lbl-field">Giới tính</label>
+		                <select name="" id="">
+		                	<option value="">Chọn giới tính</option>
+		                	<option value="">Nam</option>
+		                	<option value="">Nữ</option>
+		                </select>
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Số CMND/ĐKKD/HC</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Ngày cấp</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Nơi cấp</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Địa chỉ</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Email</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Số điện thoại</label>
+		                <input type="text" class="box-enter" name="txtacc">
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Chọn ảnh CMT mặt trước <span class="cl-red">*</span></label>
+		                <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url('images/bg-camera.png');">
+                                </div>
+                            </div>
+                        </div>
+		            </div>
+		            <div class="data-filed">
+		                <label class="lbl-field">Chọn ảnh CMT mặt sau <span class="cl-red">*</span></label>
+
+		                <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload2" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload2"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview2" style="background-image: url('images/bg-camera.png');">
+                                </div>
+                            </div>
+                        </div>
+		            </div>
+		            
+				</div>
+				
+
+	            
+	            
+	            
+	            
+	            <button class="btn-login" type="submit">Đăng ký</button>
+	            
+	            <div class="dp-flex-between">
+	            	<div class="text-center cl-gray w-100">
+	            		Bạn đã có tài khoản, hãy
+	            		<a href="javascript:0;" class="page-login"> Đăng nhập </a>
+	            	</div>
+		            
+		            <div>
+		                
+		            </div>
+		        </div>
+			</form>
+	    </div>
+		
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('.page-regis').click(function(){
+				$('.zone-form').addClass('active');
+			});
+			$('.page-login').click(function(){
+				$('.zone-form').removeClass('active');
+			});
+			
+
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        reader.onload = function(e) {
+		            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+		            $('#imagePreview').hide();
+		            $('#imagePreview').fadeIn(650);
+		        }
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+		$("#imageUpload").change(function() {
+		    readURL(this);
+		});
+
+		function readURL2(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        reader.onload = function(e) {
+		            $('#imagePreview2').css('background-image', 'url('+e.target.result +')');
+		            $('#imagePreview2').hide();
+		            $('#imagePreview2').fadeIn(650);
+		        }
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+		$("#imageUpload2").change(function() {
+		    readURL2(this);
+		});
+
+		
+
+	</script>	
+</body>
+</html>
